@@ -1,5 +1,5 @@
 # White Thai
-### A blog for Thai food lovers in the DC area.
+### A white guy reviews Thai food in the DC area.
 
 ![alt text](<White-Thai screenshot.png>)
 
