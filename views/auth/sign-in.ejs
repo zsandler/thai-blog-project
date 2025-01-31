@@ -7,25 +7,27 @@
   <link rel="stylesheet" href="/stylesheets/style.css" />
   <title>Sign In</title>
 </head>
+
 <body>
   <nav>
     <% if(user) { %>
-    <a href="/users/<%= user._id %>/restaurants">Your Apps</a>
-    <a href="/auth/sign-out">Sign Out</a>
-    <% } else { %>
-    <a href="/auth/sign-in">Sign In</a>
-    <a href="/auth/sign-up">Sign Up</a>
-    <% } %>
+      <a href="/users/<%= user._id %>/restaurants">Your Apps</a>
+      <a href="/auth/sign-out">Sign Out</a>
+      <% } else { %>
+        <a href="/auth/sign-in">Sign In</a>
+        <a href="/auth/sign-up">Sign Up</a>
+        <% } %>
   </nav>
   <div class="signin-container">
-  <h1>Sign in</h1>
-  
-  <form action="/auth/sign-in" method="POST">
-    <label for="username">Username:</label>
-    <input type="text" name="username" id="username" required />
-    <label for="password">Password:</label>
-    <input type="password" name="password" id="password" required />
-    <button type="submit">Sign in</button>
-  </form>
+    <h1>Sign in</h1>
+
+    <form action="/auth/sign-in" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" required />
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" required />
+      <button type="submit">Sign in</button>
+    </form>
 </body>
+
 </html>

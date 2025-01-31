@@ -23,7 +23,6 @@ mongoose.connection.on('connected', () => {
 
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
-// app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(
   session({
@@ -34,8 +33,6 @@ app.use(
 );
 
 app.use(passUserToView);
-
-// server.js
 
 app.get('/', (req, res) => {
   if (req.session.user) {

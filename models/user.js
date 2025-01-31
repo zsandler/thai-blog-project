@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
 const restaurantSchema = new mongoose.Schema({
-  name: { 
+  name: {
     type: String,
     required: true,
   },
-  location: { 
+  location: {
     type: String,
     required: false,
   },
@@ -17,8 +17,7 @@ const restaurantSchema = new mongoose.Schema({
     type: String,
     required: false,
   },
-  // _id: String,
-  // required: true,
+
 })
 
 const Restaurant = mongoose.model('Restaurants', restaurantSchema);

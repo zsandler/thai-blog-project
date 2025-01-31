@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 body {
-font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -30,7 +30,7 @@ nav {
   width: 90%;
 }
 
-.show-header > h1 {
+.show-header>h1 {
   color: #1c2e5b;
   font-size: 3.4em;
   margin-left: 10px;
@@ -60,7 +60,7 @@ button:hover {
   background-color: #e84a6c;
 }
 
-.show-actions > a {
+.show-actions>a {
   background-color: #4b598e;
   color: white;
   text-decoration: none;
@@ -73,12 +73,12 @@ button:hover {
   font-family: 'Poppins', sans-serif;
 }
 
-.show-actions > a:hover {
+.show-actions>a:hover {
   background-color: #1c2e5b;
 }
 
 p {
-  color:black;
+  color: black;
   font-weight: bold;
   font-size: 1.4em;
   margin: 10px 30px 30px;
@@ -90,7 +90,7 @@ p {
   margin: 20px 0;
 }
 
-.show-notes-container > a {
+.show-notes-container>a {
   text-decoration: none;
   font-weight: bold;
   color: white;
@@ -98,7 +98,7 @@ p {
   margin: 20px;
 }
 
-.show-notes-container > a:hover {
+.show-notes-container>a:hover {
   color: #4b598e;
 }
 
@@ -115,7 +115,7 @@ h2 {
   color: #1c2e5b;
 }
 
-.show-notes > p {
+.show-notes>p {
   font-weight: normal;
   color: #1c2e5b;
   text-align: left;

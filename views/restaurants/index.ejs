@@ -12,22 +12,23 @@
 
 <%- include('../partials/_navbar.ejs') %>
 
-<body>
+  <body>
 
-  <div class="all-restaurants-body">
-    <div class="all-restaurants-header">
-  <h1>Your Restaurants</h1>
+    <div class="all-restaurants-body">
+      <div class="all-restaurants-header">
+        <h1>Your Restaurants</h1>
 
-  <a class="add-restaurants-link" href="/users/<%=user._id%>/restaurants/new"
-  <a href="/users/<%=user._id%>/restaurants/new">Add a Restaurant</a>
-  <ul>
-    <% restaurants.forEach((restaurant) => { %>
-      <li>
-        <a href="/users/<%= user._id %>/restaurants/<%= restaurant._id %>">
-<%= restaurant.name %>
-        </a>
-      </li>
-      <% }) %>
-  </ul>
-</body>
+        <a class="add-restaurants-link" href="/users/<%=user._id%>/restaurants/new" <a
+          href="/users/<%=user._id%>/restaurants/new">Add a Restaurant</a>
+        <ul>
+          <% restaurants.forEach((restaurant)=> { %>
+            <li>
+              <a href="/users/<%= user._id %>/restaurants/<%= restaurant._id %>">
+                <%= restaurant.name %>
+              </a>
+            </li>
+            <% }) %>
+        </ul>
+  </body>
+
 </html>

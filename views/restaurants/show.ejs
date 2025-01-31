@@ -12,10 +12,14 @@
 
 <body>
     <%- include('../partials/_navbar.ejs') %>
-        <p>Name: <%= restaurant.name %></p>
-        <p>Location: <%= restaurant.location %></p>
-        <p>Star Rating: <%= restaurant.rating %></p>
-        <p>Comments: <%= restaurant.comments %></p>
+        <p>Name: <%= restaurant.name %>
+        </p>
+        <p>Location: <%= restaurant.location %>
+        </p>
+        <p>Star Rating: <%= restaurant.rating %>
+        </p>
+        <p>Comments: <%= restaurant.comments %>
+        </p>
         <a href="/users/<%= user._id %>/restaurants/<%= restaurant._id %>/edit">
             <button type="submit">Edit restaurant</button>
         </a>
