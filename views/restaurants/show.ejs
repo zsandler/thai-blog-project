@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/show.css" />
+    <title>
+        <%= restaurant.name %>
+    </title>
+</head>
+
+<body>
+    <%- include('../partials/_navbar.ejs') %>
+        <p>Name: <%= restaurant.name %></p>
+        <p>Location: <%= restaurant.location %></p>
+        <p>Star Rating: <%= restaurant.rating %></p>
+        <p>Comments: <%= restaurant.comments %></p>
+        <a href="/users/<%= user._id %>/restaurants/<%= restaurant._id %>/edit">
+            <button type="submit">Edit restaurant</button>
+        </a>
+        <form action="/users/<%= user._id %>/restaurants/<%= restaurant._id %>?_method=DELETE" method="POST">
+            <button type="submit">Delete restaurant</button>
+        </form>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!-- views/applications/new.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <title>Add a Restaurant!</title>
+    </head>
+
+    <body>
+        <%- include('../partials/_navbar.ejs') %>
+            <h1>Add a Restaurant!</h1>
+            <div class="new-body">
+                <form action="/users/<%= user._id %>/restaurants" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" />
+
+                    <label for="location">Location:</label>
+                    <input type="text" name="location" id="location" />
+
+                    <label for="rating">Rating:</label>
+                    <input type="number" name="rating" id="rating" />
+
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+
+                    <button type="submit">Add Restaurant</button>
+                </form>
+                </div>
+    </body>
+
+</html>
